@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        FPS GAME
+    </title>
+    <script defer src="../dist/bundle.js?430e905b8baa4f192e9e"></script>
+<script defer src="bundle.js?658d72f30e1503f53486"></script></head>
+
+<body>
+    <div id="enemyContainer">
+        <div id="enemyTitle">
+            Wrogowie
+        </div>
+    </div>
+
+   <div id="playerStatistics">
+    <div id="infoPlayer">Gracz</div>
+    <div id="ammo"></div>
+    <div id="health"></div>
+
+   </div>
+
+    <div id="root"></div>
+
+    <div id="GUI">
+        <div class="GUI-part">
+            <div>
+                <input type="range" id="cameraY" value="25" min="10" max="70" step="1">
+                <label for="cameraY">wysokość camery nad ziemią</label>
+            </div>
+
+            <div>
+                <input type="range" id="cameraVertical" value="2" min="-15" max="30" step="0.01">
+                <label for="cameraDistance">kąt nachylenia kamery x</label>
+            </div>
+
+            <div>
+                <input type="range" id="cameraDistance" value="60" min="-100" max="100" step="1">
+                <label for="cameraDistance">odległość kamery od gracza</label>
+            </div>
+        </div>
+
+        <div class="GUI-part">
+            <div>
+                <input type="range" id="cameraHorizontal" value="0" min="-50" max="50" step="1">
+                <label for="cameraHorizontal">kąt widzenia kamery y</label>
+            </div>
+
+            <div>
+                <input type="range" id="cameraFov" value="75" min="40" max="120" step="1">
+                <label for="cameraFov">fov kamery</label>
+            </div>
+
+            <div>
+                <input type="range" id="ligthIntensity" value="1" min="0.1" max="4" step="0.1">
+                <label for="ligthIntensity">moc świateł</label>
+            </div>
+        </div>
+
+        <div class="GUI-part">
+            <div>
+                <input type="checkbox" id="shadow">
+                <label for="shadow">cienie</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="topView">
+                <label for="topView">widok z góry</label>
+            </div>
+
+        </div>
+
+        <div class="GUI-part">
+            <div>
+                <input type="range" id="FireY" value="50" min="10" max="100" step="1">
+                <label for="FireY">wysokość ogniska</label>
+            </div>
+
+            <div>
+                <input type="range" id="FireX" value="10" min="0.5" max="100" step="0.5">
+                <label for="FireX">szerokość ogniska</label>
+            </div>
+
+            <div>
+                <input type="range" id="FireZ" value="20" min="0.5" max="100" step="0.5">
+                <label for="FireZ">głebokość ogniska</label>
+            </div>
+        </div>
+
+        <div class="GUI-part">
+            <div>
+                <input type="range" id="laserSpread" value="10" min="1" max="15" step="1">
+                <label for="laserSpread">rozrzut lasera</label>
+            </div>
+
+            <div>
+                <input type="range" id="laserSize" value="25" min="20" max="50" step="1">
+                <label for="latexsize">rozmiar lasera</label>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
